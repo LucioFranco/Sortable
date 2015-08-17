@@ -229,6 +229,7 @@
 		constructor: Sortable,
 
 		_onTapStart: function (/** Event|TouchEvent */evt) {
+			evt.stopPropagation();
 			var _this = this,
 				el = this.el,
 				options = this.options,
